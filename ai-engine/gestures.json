@@ -1,0 +1,101 @@
+[
+    {
+        "name": "janji",
+        "text": "Oke",
+        "pattern": [
+            0,
+            0,
+            0,
+            1
+        ],
+        "active": true
+    },
+    {
+        "name": "metal",
+        "text": "keren bro",
+        "pattern": [
+            1,
+            0,
+            0,
+            1
+        ],
+        "active": true
+    },
+    {
+        "name": "perkenalkan",
+        "text": "perkenalkan nama saya",
+        "pattern": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "active": true
+    },
+    {
+        "name": "nama saya",
+        "text": "Mandala",
+        "pattern": [
+            1,
+            1,
+            0,
+            0
+        ],
+        "active": true
+    },
+    {
+        "name": "asal sekolah",
+        "text": "dari SMKN 6 Balikpapan",
+        "pattern": [
+            1,
+            1,
+            1,
+            0
+        ],
+        "active": true
+    },
+    {
+        "name": "salam",
+        "text": "assalamualaikum warahmatullahi wabarokatuh",
+        "pattern": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "active": true
+    },
+    {
+        "name": "trimakasih",
+        "text": "sekian trimakasih",
+        "pattern": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "active": true
+    },
+    {
+        "name": "jari tengah",
+        "text": "saya marah",
+        "pattern": [
+            0,
+            1,
+            0,
+            0
+        ],
+        "active": true
+    },
+    {
+        "name": "tes",
+        "text": "saya izin jawab",
+        "pattern": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "active": true
+    }
+]
