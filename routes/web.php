@@ -14,11 +14,17 @@ Route::get('/', function () {
 
 
 /* ================= START AI ================= */
-Route::get('/start-ai', function () { 
-    $pythonPath = "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"; 
-    $scriptPath = base_path('ai-engine/app.py'); 
-    $command = "start /B \"\" \"$pythonPath\" \"$scriptPath\""; 
-    pclose(popen("cmd /c $command", "r")); 
+Route::get('/start-ai', function () {
+
+    $python = env('PYTHON_BINARY', 'python');
+    $scriptPath = base_path('ai-engine/app.py');
+
+    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+        pclose(popen("start /B $python \"$scriptPath\"", "r"));
+    } else {
+        exec("$python \"$scriptPath\" > /dev/null 2>&1 &");
+    }
+
     return response()->json(['status' => 'AI Started']);
 });
 
